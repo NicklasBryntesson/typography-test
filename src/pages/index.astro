@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Current Cheltenham font">
+  <main>
+    <h1>Current Cheltenham font</h1>
+    <p class="largeText">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+      voluptatibus asperiores exercitationem, quia dolor laboriosam, fugit magni
+      autem quaerat error dicta cum quae ipsam magnam. Quibusdam unde temporibus
+      vero cum.
+    </p>
+    <p class="normalText">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+      necessitatibus ad at quidem cupiditate non, distinctio, rem vitae
+      doloribus sit est porro, autem pariatur sequi blanditiis. Harum ut
+      pariatur quaerat!
+    </p>
+    <p class="jumboText">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+  </main>
+</Layout>
+
+<style>
+  /* ITC Cheltenham W04 Book Regular version */
+  @font-face {
+    font-family: "ITC Cheltenham W04 Book";
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Cheltenham/CheltenhamStd-Book-TEST01.woff2")
+      format("woff2");
+    font-weight: 400;
+  }
+
+  main {
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    margin-inline: auto;
+    margin-block-end: auto;
+    margin-block-start: var(--spacing--lg);
+  }
+
+  .largeText {
+    font-size: var(--fontSize--body--large);
+  }
+
+  .jumboText {
+    font-size: 4rem;
+  }
+</style>
